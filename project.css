@@ -1,0 +1,331 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: poppins, sans-serif;
+}
+#projects {
+  text-align: center;
+  margin-top: 4rem;
+  font-size: 3.4rem;
+  text-shadow: 0.5px 1px 0.5px grey;
+  color: rgb(255, 255, 255);
+  animation: slidfromleft 1s ease forwards;
+  opacity: 0;
+}
+@keyframes slidfromleft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+body.light-mode #projects {
+  color: rgba(0, 0, 0, 0.646);
+}
+@media screen and (max-width: 700px) {
+  #projects {
+    font-size: 2rem;
+  }
+}
+.card1 {
+  margin-top: 5rem;
+  height: 65vh;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+.card10 {
+  margin-top: 5rem;
+  height: 65vh;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+@media screen and (max-width: 700px) {
+  .card10 {
+    margin-top: 11.5rem;
+    height: 55vh;
+  }
+}
+@media screen and (max-width: 700px) {
+  .card1 {
+    height: 55vh;
+    margin-top: 2rem;
+  }
+}
+#card {
+  display: flex;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+  border-right: 12px solid rgb(255, 255, 255);
+  border-bottom: 12px solid rgb(255, 255, 255);
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  width: 90%;
+  padding: 20px;
+  justify-content: space-between;
+}
+@media screen and (max-width: 700px) {
+  #card {
+    flex-direction: column;
+    margin-top: 1.6rem;
+  }
+}
+body.light-mode #card {
+  border-left: 1px solid rgb(0, 0, 0);
+  border-top: 1px solid rgb(0, 0, 0);
+  border-right: 12px solid rgb(0, 0, 0);
+  border-bottom: 12px solid rgb(0, 0, 0);
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+.left-card {
+  width: 50%;
+  cursor: pointer;
+  border-radius: 5px;
+  overflow: hidden;
+  height: 80%;
+  align-self: center;
+}
+@media screen and (max-width: 700px) {
+  .left-card {
+    width: 100%;
+    height: 100%;
+  }
+}
+.left-card img:hover {
+  scale: 110%;
+}
+.left-card img {
+  border-radius: 5px;
+  transition: all 0.5s;
+}
+.right-card {
+  text-align: left;
+  width: 45%;
+}
+@media screen and (max-width: 700px) {
+  .right-card {
+    width: 100%;
+    
+  }
+}
+.title-card {
+  font-size: 20px;
+  font-weight: 500;
+  text-shadow: none;
+  letter-spacing: 0.5px;
+  color: aquamarine;
+  margin-top: 10px;
+}
+@media screen and (max-width: 700px) {
+  .title-card {
+    font-size: 15px;
+  }
+}
+body.light-mode .title-card {
+  color: rgb(241, 0, 0);
+}
+.title2 {
+  font-size: 35px;
+  font-weight: 650;
+  text-shadow: none;
+  color: #ffffff;
+  cursor: pointer;
+  margin-top: 10px;
+}
+@media screen and (max-width: 700px) {
+  .title2 {
+    font-size: 25px;
+    margin-top: -2px;
+  }
+}
+body.light-mode .title2 {
+  color: #000;
+}
+.title2:hover {
+  text-decoration: underline;
+}
+#para3 {
+  font-size: 16.5px;
+  text-shadow: none;
+  color: #ffffff;
+  margin-top: 10px;
+}
+@media screen and (max-width: 700px) {
+  #para3 {
+    margin-top: -2px;
+    font-size: 14px;
+  }
+}
+body.light-mode #para3 {
+  color: #000;
+}
+.buttonn {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-top: 10px;
+ 
+}
+.git img {
+  display: flex;
+  justify-content: center;
+}
+#btnn  {
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 18px;
+  font-weight: 550;
+  border-radius: 10px;
+  border: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  cursor: pointer;
+  background-color: #ffffff;
+  color: black;
+  letter-spacing: 1px;
+  text-decoration: none;
+  text-shadow: none;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+@media screen and (max-width: 700px) {
+  #btnn {
+    font-size: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+body.light-mode #btnn {
+  background-color: #000000;
+  color: white;
+}
+.git img {
+  cursor: pointer;
+}
+/*card*/
+.card2 {
+  margin-top: 5rem;
+  height: 70vh;
+  display: flex;
+  justify-content: space-around;
+  align-self: center;
+}
+@media screen and (max-width: 700px) {
+  .card2 {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+    gap: 5rem;
+  }
+}
+#card1 {
+  display: flex;
+  border-left: 1px solid rgba(255, 255, 255, 0.839);
+  border-top: 1px solid rgba(255, 255, 255, 0.839);
+  border-right: 12px solid rgba(255, 255, 255, 0.839);
+  border-bottom: 12px solid rgba(255, 255, 255, 0.839);
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  width: 40%;
+  padding: 20px;
+  flex-direction: column;
+}
+@media screen and (max-width: 700px) {
+  #card1 {
+    width: 90%;
+  }
+}
+body.light-mode #card1 {
+  border-left: 1px solid rgb(0, 0, 0);
+  border-top: 1px solid rgb(0, 0, 0);
+  border-right: 12px solid rgb(0, 0, 0);
+  border-bottom: 12px solid rgb(0, 0, 0);
+}
+.left-card1 img {
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.left-card1 {
+  overflow: hidden;
+  border-radius: 10px;
+  width: 100%;
+  height: 60%;
+}
+.left-card1 img:hover {
+  scale: 110%;
+}
+.title5 {
+  color: aquamarine;
+  margin-top: 20px;
+  font-size: 22px;
+  font-weight: 450;
+}
+body.light-mode .title5 {
+  color: red;
+}
+.title6 {
+  font-size: 30px;
+  font-weight: 600;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+}
+@media screen and (max-width:700px) {
+  .title6{
+    font-size: 25px;
+  }
+}
+.title6:hover {
+  text-decoration: underline;
+}
+body.light-mode .title6 {
+  color: rgb(0, 0, 0);
+}
+.timepass {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.lefttime {
+  font-size: 20px;
+  text-decoration: underline;
+  font-weight: 500;
+  cursor: pointer;
+  color: white;
+}
+@media screen and (max-width: 700px) {
+  .lefttime {
+    font-size: 18px;
+  }
+}
+body.light-mode .lefttime {
+  color: #000;
+}
+.righttime {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.righttime img {
+  width: 30px;
+}
+  
+
+
+   
+
+    

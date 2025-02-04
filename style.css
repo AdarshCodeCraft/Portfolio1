@@ -1,0 +1,576 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: poppins, sans-serif;
+}
+body {
+  background-color: #141414;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 100 60'%3E%3Cg %3E%3Crect fill='%23141414' width='11' height='11'/%3E%3Crect fill='%23151515' x='10' width='11' height='11'/%3E%3Crect fill='%23151515' y='10' width='11' height='11'/%3E%3Crect fill='%23161616' x='20' width='11' height='11'/%3E%3Crect fill='%23171717' x='10' y='10' width='11' height='11'/%3E%3Crect fill='%23171717' y='20' width='11' height='11'/%3E%3Crect fill='%23181818' x='30' width='11' height='11'/%3E%3Crect fill='%23181818' x='20' y='10' width='11' height='11'/%3E%3Crect fill='%23191919' x='10' y='20' width='11' height='11'/%3E%3Crect fill='%231a1a1a' y='30' width='11' height='11'/%3E%3Crect fill='%231a1a1a' x='40' width='11' height='11'/%3E%3Crect fill='%231b1b1b' x='30' y='10' width='11' height='11'/%3E%3Crect fill='%231b1b1b' x='20' y='20' width='11' height='11'/%3E%3Crect fill='%231c1c1c' x='10' y='30' width='11' height='11'/%3E%3Crect fill='%231c1c1c' y='40' width='11' height='11'/%3E%3Crect fill='%231d1d1d' x='50' width='11' height='11'/%3E%3Crect fill='%231e1e1e' x='40' y='10' width='11' height='11'/%3E%3Crect fill='%231e1e1e' x='30' y='20' width='11' height='11'/%3E%3Crect fill='%231f1f1f' x='20' y='30' width='11' height='11'/%3E%3Crect fill='%231f1f1f' x='10' y='40' width='11' height='11'/%3E%3Crect fill='%23202020' y='50' width='11' height='11'/%3E%3Crect fill='%23212121' x='60' width='11' height='11'/%3E%3Crect fill='%23212121' x='50' y='10' width='11' height='11'/%3E%3Crect fill='%23222222' x='40' y='20' width='11' height='11'/%3E%3Crect fill='%23232323' x='30' y='30' width='11' height='11'/%3E%3Crect fill='%23232323' x='20' y='40' width='11' height='11'/%3E%3Crect fill='%23242424' x='10' y='50' width='11' height='11'/%3E%3Crect fill='%23242424' x='70' width='11' height='11'/%3E%3Crect fill='%23252525' x='60' y='10' width='11' height='11'/%3E%3Crect fill='%23262626' x='50' y='20' width='11' height='11'/%3E%3Crect fill='%23262626' x='40' y='30' width='11' height='11'/%3E%3Crect fill='%23272727' x='30' y='40' width='11' height='11'/%3E%3Crect fill='%23282828' x='20' y='50' width='11' height='11'/%3E%3Crect fill='%23282828' x='80' width='11' height='11'/%3E%3Crect fill='%23292929' x='70' y='10' width='11' height='11'/%3E%3Crect fill='%23292929' x='60' y='20' width='11' height='11'/%3E%3Crect fill='%232a2a2a' x='50' y='30' width='11' height='11'/%3E%3Crect fill='%232b2b2b' x='40' y='40' width='11' height='11'/%3E%3Crect fill='%232b2b2b' x='30' y='50' width='11' height='11'/%3E%3Crect fill='%232c2c2c' x='90' width='11' height='11'/%3E%3Crect fill='%232d2d2d' x='80' y='10' width='11' height='11'/%3E%3Crect fill='%232d2d2d' x='70' y='20' width='11' height='11'/%3E%3Crect fill='%232e2e2e' x='60' y='30' width='11' height='11'/%3E%3Crect fill='%232f2f2f' x='50' y='40' width='11' height='11'/%3E%3Crect fill='%232f2f2f' x='40' y='50' width='11' height='11'/%3E%3Crect fill='%23303030' x='90' y='10' width='11' height='11'/%3E%3Crect fill='%23303030' x='80' y='20' width='11' height='11'/%3E%3Crect fill='%23313131' x='70' y='30' width='11' height='11'/%3E%3Crect fill='%23323232' x='60' y='40' width='11' height='11'/%3E%3Crect fill='%23323232' x='50' y='50' width='11' height='11'/%3E%3Crect fill='%23333333' x='90' y='20' width='11' height='11'/%3E%3Crect fill='%23343434' x='80' y='30' width='11' height='11'/%3E%3Crect fill='%23343434' x='70' y='40' width='11' height='11'/%3E%3Crect fill='%23353535' x='60' y='50' width='11' height='11'/%3E%3Crect fill='%23363636' x='90' y='30' width='11' height='11'/%3E%3Crect fill='%23363636' x='80' y='40' width='11' height='11'/%3E%3Crect fill='%23373737' x='70' y='50' width='11' height='11'/%3E%3Crect fill='%23383838' x='90' y='40' width='11' height='11'/%3E%3Crect fill='%23383838' x='80' y='50' width='11' height='11'/%3E%3Crect fill='%23393939' x='90' y='50' width='11' height='11'/%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover;
+}
+/* Navigation links */
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 70px;
+  position: sticky;
+  top: 0px;
+  z-index: 1000;
+  background-color: #1919195f;
+  cursor: pointer;
+}
+body.light-mode .navbar {
+  background-color: #fffdfd35;
+}
+@media screen and (max-width: 800px) {
+  nav {
+    display: none;
+  }
+  .navbar {
+    justify-content: space-between;
+    background-color: rgba(21, 20, 20, 0);
+    padding: 10px;
+    top: 0;
+    margin-top: -20px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+      rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  }
+}
+@media screen and (min-width: 800px) {
+  #menu {
+    display: none;
+    cursor: pointer;
+  }
+}
+nav a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 500;
+  font-size: 1.4vw;
+  margin: 0 20px;
+  color: rgba(0, 0, 0, 0.66);
+  text-shadow: 0.5px 0.5px 1px;
+  padding: 3.5px 12px;
+  transition: background-color 0.5s ease;
+}
+nav a:hover {
+  background-color: #cacaca;
+  border-radius: 50px;
+  color: black;
+}
+nav {
+  background-color: rgba(255, 255, 255, 0.916);
+  padding: 5px 15px 5px 15px;
+  border-radius: 30px 0px 30px 0px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  filter: drop-shadow(1px 1px 10px rgb(59, 59, 59));
+}
+/* Media icons */
+.meida a {
+  margin: 0 15px;
+}
+@media screen and (max-width: 800px) {
+  .meida {
+    display: none;
+  }
+}
+a img {
+  transition: all 0.2s;
+  filter: drop-shadow(1px 1px 10px rgb(37, 37, 37));
+}
+a img:hover {
+  transform: translateY(-10%);
+}
+.navpro {
+  display: flex;
+}
+/*hero-section*/
+.hero-section {
+  display: flex;
+  color: white;
+  justify-content: space-around;
+  margin-top: 1rem;
+  height: 85vh;
+  gap: 20px;
+  padding: 5px;
+}
+@media screen and (max-width: 450px) {
+  .hero-section {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+    height: 85vh;
+  }
+}
+.left-section {
+  filter: drop-shadow(1px 1px 10px rgb(49, 48, 48));
+  width: 38%;
+  margin-left: 5rem;
+  display: flex;
+  margin-top: 10px;
+  cursor: pointer;
+  position: relative;
+ 
+  
+}
+@media screen and (max-width: 450px) {
+  .left-section {
+    width: 80%;
+    border-radius: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    
+    
+  }
+}
+@media screen and (max-width: 450px) {
+  .left-section img {
+    margin-right: 20px;
+   background-color: #cacaca;
+    height: 98%;
+    width: 75%;
+    border-radius: 50%;
+    
+  }
+}
+.left-section img {
+  margin-left: 20px;
+  transition: all 0.5s;
+  border: 1px solid rgba(255, 254, 254, 0.346);
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+  
+
+body.light-mode .left-section img{
+  border: 1px solid rgba(42, 42, 42, 0.456);
+}
+  
+ 
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background-color: rgba(148, 150, 150, 0.82);
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 50px;
+  background-color: #03030371;
+}
+.thought {
+  font-size: 3vw;
+  font-weight: 700;
+  margin-top: 10px;
+  text-shadow: 1px 0.5px 0.5px rgb(136, 135, 135);
+}
+@media screen and (max-width: 450px) {
+  .thought {
+    font-size: 25px;
+  }
+}
+.right-section {
+  width: 50%;
+  height: 80%;
+  margin-top: 4.5rem;
+  animation: slidfromleft 1s ease forwards;
+  opacity: 0;
+}
+@media screen and (max-width: 450px) {
+  .right-section {
+    width: 98%;
+    margin-top: 0.5rem;
+    text-align: center;
+  }
+}
+@keyframes slidfromleft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+#para {
+  margin-top: 10px;
+  font-size: 17px;
+}
+@media screen and (max-width: 450px) {
+  #para {
+    font-size: 15px;
+  }
+}
+.last {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 20rem;
+}
+@media screen and (max-width: 450px) {
+  .last {
+    flex-direction: column;
+    margin: 0;
+  }
+}
+#Resume {
+  margin-top: 20px;
+  padding: 12px 40px 12px 40px;
+  font-size: large;
+  font-weight: 600;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid white;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+@media screen and (max-width: 450px) {
+  #Resume {
+    width: 50%;
+    align-self: center;
+  }
+}
+#Resume:hover {
+  background-color: #00000000;
+  color: white;
+}
+
+/* Toggle switch */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 24px;
+  margin-left: 20px;
+  margin-top: 2.5px;
+}
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 24px;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 4px;
+  bottom: 3px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+input:checked + .slider {
+  background-color: #030303;
+}
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+/* Light mode theme */
+body.light-mode {
+  background-color: #ffffff;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 100 60'%3E%3Cg %3E%3Crect fill='%23FFFFFF' width='11' height='11'/%3E%3Crect fill='%23fdfdfd' x='10' width='11' height='11'/%3E%3Crect fill='%23fcfcfc' y='10' width='11' height='11'/%3E%3Crect fill='%23fafafa' x='20' width='11' height='11'/%3E%3Crect fill='%23f9f9f9' x='10' y='10' width='11' height='11'/%3E%3Crect fill='%23f7f7f7' y='20' width='11' height='11'/%3E%3Crect fill='%23f6f6f6' x='30' width='11' height='11'/%3E%3Crect fill='%23f4f4f4' x='20' y='10' width='11' height='11'/%3E%3Crect fill='%23f3f3f3' x='10' y='20' width='11' height='11'/%3E%3Crect fill='%23f1f1f1' y='30' width='11' height='11'/%3E%3Crect fill='%23efefef' x='40' width='11' height='11'/%3E%3Crect fill='%23eeeeee' x='30' y='10' width='11' height='11'/%3E%3Crect fill='%23ececec' x='20' y='20' width='11' height='11'/%3E%3Crect fill='%23ebebeb' x='10' y='30' width='11' height='11'/%3E%3Crect fill='%23e9e9e9' y='40' width='11' height='11'/%3E%3Crect fill='%23e8e8e8' x='50' width='11' height='11'/%3E%3Crect fill='%23e6e6e6' x='40' y='10' width='11' height='11'/%3E%3Crect fill='%23e5e5e5' x='30' y='20' width='11' height='11'/%3E%3Crect fill='%23e3e3e3' x='20' y='30' width='11' height='11'/%3E%3Crect fill='%23e2e2e2' x='10' y='40' width='11' height='11'/%3E%3Crect fill='%23e0e0e0' y='50' width='11' height='11'/%3E%3Crect fill='%23dfdfdf' x='60' width='11' height='11'/%3E%3Crect fill='%23dddddd' x='50' y='10' width='11' height='11'/%3E%3Crect fill='%23dbdbdb' x='40' y='20' width='11' height='11'/%3E%3Crect fill='%23dadada' x='30' y='30' width='11' height='11'/%3E%3Crect fill='%23d8d8d8' x='20' y='40' width='11' height='11'/%3E%3Crect fill='%23d7d7d7' x='10' y='50' width='11' height='11'/%3E%3Crect fill='%23d5d5d5' x='70' width='11' height='11'/%3E%3Crect fill='%23d4d4d4' x='60' y='10' width='11' height='11'/%3E%3Crect fill='%23d2d2d2' x='50' y='20' width='11' height='11'/%3E%3Crect fill='%23d1d1d1' x='40' y='30' width='11' height='11'/%3E%3Crect fill='%23cfcfcf' x='30' y='40' width='11' height='11'/%3E%3Crect fill='%23cecece' x='20' y='50' width='11' height='11'/%3E%3Crect fill='%23cccccc' x='80' width='11' height='11'/%3E%3Crect fill='%23cbcbcb' x='70' y='10' width='11' height='11'/%3E%3Crect fill='%23c9c9c9' x='60' y='20' width='11' height='11'/%3E%3Crect fill='%23c8c8c8' x='50' y='30' width='11' height='11'/%3E%3Crect fill='%23c6c6c6' x='40' y='40' width='11' height='11'/%3E%3Crect fill='%23c5c5c5' x='30' y='50' width='11' height='11'/%3E%3Crect fill='%23c3c3c3' x='90' width='11' height='11'/%3E%3Crect fill='%23c2c2c2' x='80' y='10' width='11' height='11'/%3E%3Crect fill='%23c0c0c0' x='70' y='20' width='11' height='11'/%3E%3Crect fill='%23bfbfbf' x='60' y='30' width='11' height='11'/%3E%3Crect fill='%23bdbdbd' x='50' y='40' width='11' height='11'/%3E%3Crect fill='%23bcbcbc' x='40' y='50' width='11' height='11'/%3E%3Crect fill='%23bababa' x='90' y='10' width='11' height='11'/%3E%3Crect fill='%23b9b9b9' x='80' y='20' width='11' height='11'/%3E%3Crect fill='%23b8b8b8' x='70' y='30' width='11' height='11'/%3E%3Crect fill='%23b6b6b6' x='60' y='40' width='11' height='11'/%3E%3Crect fill='%23b5b5b5' x='50' y='50' width='11' height='11'/%3E%3Crect fill='%23b3b3b3' x='90' y='20' width='11' height='11'/%3E%3Crect fill='%23b2b2b2' x='80' y='30' width='11' height='11'/%3E%3Crect fill='%23b0b0b0' x='70' y='40' width='11' height='11'/%3E%3Crect fill='%23afafaf' x='60' y='50' width='11' height='11'/%3E%3Crect fill='%23adadad' x='90' y='30' width='11' height='11'/%3E%3Crect fill='%23acacac' x='80' y='40' width='11' height='11'/%3E%3Crect fill='%23aaaaaa' x='70' y='50' width='11' height='11'/%3E%3Crect fill='%23a9a9a9' x='90' y='40' width='11' height='11'/%3E%3Crect fill='%23a7a7a7' x='80' y='50' width='11' height='11'/%3E%3Crect fill='%23A6A6A6' x='90' y='50' width='11' height='11'/%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover;
+  color: #000000;
+}
+body.light-mode nav {
+  background-color: rgba(0, 0, 0, 0.866);
+  filter: none;
+  box-shadow: rgba(0, 0, 0, 0.748) 0px 2px 4px,
+    rgba(0, 0, 0, 0.456) 0px 7px 13px -3px,
+    rgba(0, 0, 0, 0.752) 0px -3px 0px inset;
+}
+body.light-mode nav a {
+  color: rgba(255, 255, 255, 0.594);
+}
+body.light-mode nav a:hover {
+  background-color: #383737;
+  border-radius: 50px;
+  color: white;
+}
+body.light-mode .thought {
+  color: #000000;
+}
+body.light-mode #Resume {
+  background-color: #000000;
+  color: #ffffff;
+  border: 2px solid black;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+body.light-mode #Resume:hover {
+  background-color: rgba(255, 255, 255, 0.506);
+  color: black;
+}
+
+body.light-mode #para {
+  color: #0e0e0e;
+}
+body.light-mode a img {
+  transition: all 0.5s;
+  filter: drop-shadow(1px 1px 10px rgb(232, 231, 231));
+}
+body.light-mode .left-section {
+  filter: drop-shadow(1px 1px 10px rgb(172, 170, 170));
+}
+hr {
+  margin-top: 4rem;
+  border: 0.5px solid rgb(33, 32, 32);
+}
+body.light-mode hr {
+  margin-top: 4rem;
+  border: 0.5px solid rgba(176, 174, 174, 0.227);
+}
+footer {
+  font-size: 1.4vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 1px;
+  color: #5c5c5c;
+  font-weight: 600;
+  gap: 5px;
+  margin-top: 2rem;
+
+ 
+}
+@media screen and (max-width: 450px) {
+  footer {
+    font-size: 12px;
+  }
+}
+.button {
+  background-color: rgba(255, 255, 255, 0);
+  cursor: pointer;
+  border: none;
+  color: #fffdfd;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  overflow: hidden;
+  position:absolute;
+  display: grid;
+  place-content: center;
+  transition: background 200ms, transform 200ms;
+  font-weight: 600;
+  align-self: flex-end;
+  
+  
+}
+body.light-mode .button {
+  color: rgba(0, 0, 0, 0.647);
+}
+@media screen and (max-width: 700px) {
+  .button {
+    margin-left: -10rem;
+    width: 130px;
+    height: 130px;
+    margin-bottom: -1rem;
+  }
+}
+.button__text {
+  font-size: 1.4rem;
+  position: absolute;
+  inset: 0;
+  animation: text-rotation 8s linear infinite;
+  span {
+    position: absolute;
+    transform: rotate(calc(12deg * var(--index)));
+    inset: -5px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .button__text {
+    font-size: 1.1rem;
+  }
+}
+.button__circle {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  background: white;
+  color: #d00808;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 15px;
+  text-decoration: none;
+}
+@media screen and (max-width: 700px) {
+  .button__circle {
+    width: 80px;
+    height: 80px;
+  }
+}
+.button__circle:hover {
+  background-color: #000;
+  border: 1px solid red;
+}
+.button__icon--copy {
+  position: absolute;
+  transform: translate(-150%, 150%);
+}
+.button:hover {
+  transform: scale(1.05);
+}
+.button:hover .button__icon {
+  color: #000;
+}
+.button:hover .button__icon:first-child {
+  transition: transform 0.3s ease-in-out;
+  transform: translate(150%, -150%);
+}
+.button:hover .button__icon--copy {
+  transition: transform 0.3s ease-in-out 0.1s;
+  transform: translate(0);
+}
+@keyframes text-rotation {
+  to {
+    rotate: 360deg;
+  }
+}
+/* Sliding menu styles */
+.side-menu {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  height: 100%;
+  overflow: hidden;
+  transition: left 0.5s ease;
+  z-index: 1000;
+  margin-top: 60px;
+ 
+}
+@media screen and (max-width: 800px) {
+  nav {
+    border-radius: 0%;
+    height: 60%;
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    margin-top: 10px;
+  }
+  body.light-mode nav{
+    background-color: rgb(0, 0, 0);
+  }
+
+}
+.side-menu nav {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.side-menu nav a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  margin: 30px 0;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+/* Active states for animations */
+.side-menu.open {
+  left: 0;
+}
+.mobile a img{
+margin: 0px 5px;
+margin-top: 15px;
+}
+@media screen and (min-width:800px) {
+  .mobile{
+    display: none;
+  }
+}
+/*visitor*/
+.container6 {
+  text-align: center;
+  color: #010101;
+  display: flex;
+  margin-left: 30px;
+  overflow: hidden;
+
+}
+@media screen and (max-width:800px) {
+  .container6{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+}
+h1 {
+  font-size: 2.5rem;
+}
+.counter-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+.box {
+  width: 40px;
+  height: 50px;
+  background: rgba(0, 0, 0, 0.1);
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  animation: fadeIn 0.5s ease-in-out;
+}
+body.light-mode .box{
+  background-color: white;
+}
+
+@keyframes fadeIn {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+  
+ 
+ 
+
+
+
+
+
+
